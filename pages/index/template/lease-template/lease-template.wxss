@@ -1,0 +1,59 @@
+.lease-container{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    font-size:24rpx;
+}
+.lease-garden{
+    width: 100%;
+    display:flex;
+}
+.lease-left{
+    width: 180rpx;
+    height:180rpx;
+    margin-left:30rpx;
+    margin-top:20rpx;
+}
+.lease-right{
+    position:relative;
+    width:510rpx;
+    height:180rpx;
+    margin-top:20rpx;
+    margin-left:30rpx;
+    border-bottom:#C5C5C5 solid 0.1rpx;
+}
+.lease-name-score{
+    margin-top:20rpx;
+    height:30rpx;
+    line-height:30rpx;
+}
+.lease-name-score text:first-child{
+    font-size:30rpx;
+    font-weight:600;
+}
+.lease-name-score text:last-child{
+    position:absolute;
+    right:30rpx;
+    color:#C5C5C5;
+}
+.lease-garden-discribe{
+    color:#C5C5C5;
+    font-size:26rpx;
+    height:26rpx;
+    line-height:26rpx;
+    margin-top:-20rpx;
+}
+.lease-cost-star{
+    position:absolute;
+    height:30rpx;
+    line-height:30rpx;
+    font-weight:600;
+    bottom: 15rpx;
+    width:510rpx;
+}
+.lease-cost-star image{
+    width:30rpx;
+    height: 30rpx;
+    position: absolute;
+    right:40rpx;
+}

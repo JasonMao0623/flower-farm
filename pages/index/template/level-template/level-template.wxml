@@ -1,0 +1,8 @@
+<template name="levelTemplate">
+  <view class="level-container">
+    <block wx:for="{{leveled}}" >
+    <image wx:if="{{item}}" src="/images/level/level2.jpeg"></image>
+    <image wx:else src="/images/level/level1.jpeg"></image>
+    </block>
+  </view>
+</template>

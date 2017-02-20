@@ -1,0 +1,71 @@
+<import src="../index/template/star-template/star-template.wxml" />
+<view class="lease-detail-container">
+  <view class="lease-detail-top">
+    <image src="{{leaseData.bigImg}}" class="lease-img"></image>
+    <view class="top-text">
+      <text class="lease-name">{{leaseData.name}}</text>
+      <view class="size-star-sale">
+        <text>{{leaseData.size}}</text>
+        <template is="starTemplate" data="{{stared}}" />
+        <image src="/images/icon/sale.png" class="lease-sale"></image>
+        <text>{{leaseData.saled}}</text>
+      </view>
+      <view class="cost">
+        <text>{{leaseData.cost}}</text>
+        <view wx:if="{{leaseData.orginCost}}">{{leaseData.orginCost}}
+          <view class="under-line"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="order-introduce lease-line">
+    <view class="lease-line-line order-line1">
+      <text>订购数量</text>
+      <view class="order-action">
+        <view catchtap="onOperatorTap" data-operator="-">-</view>
+        <view>{{num}}</view>
+        <view catchtap="onOperatorTap" data-operator="+">+</view>
+      </view>
+    </view>
+    <view class="lease-line-line order-line2">
+      <text>周期规格</text>
+      <text>其他规格 ></text>
+    </view>
+    <view class="lease-line-line order-line3">
+      <block wx:for="{{leaseData.standard}}" wx:key="item">
+      <text>{{item}}</text>
+      </block>
+    </view>
+  </view>
+  <view class="lease-line farm">
+    <view class="lease-line-line farm-line1">
+      <text class="farm-text">所在农场</text>
+      <view>
+        <text>据您{{leaseData.distance}}</text>
+        <image src="/images/icon/location.png"></image>
+      </view>
+    </view>
+    <view class="lease-line-line farm-line2">
+      <image src="{{leaseData.farm.img}}"></image>
+      <view>
+        <text>{{leaseData.farm.name}}</text>
+        <text>{{leaseData.farm.location}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="goods-detail lease-line">
+    <view class="lease-line-line goods-line1">
+      <text class="goods-line1-text">商品详情</text>
+      <view class="goods-line1-logo">
+        <view>
+          <image src="/images/icon/fuwu.png"></image>
+          <text>服务保障</text>
+        </view>
+        <view>
+          <image src="/images/icon/kefu.png"></image>
+          <text>客服咨询</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

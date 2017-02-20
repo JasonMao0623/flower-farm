@@ -1,0 +1,25 @@
+<template name="leaseTemplate2">
+  <view class="lease-container">
+    <view class="lease-garden" catchtap="onMenuChildTap" data-id="{{item.id}}" data-category="lease">
+      <image src="{{item.img}}" class="lease-left"></image>
+      <view class="lease-right">
+        <view class="lease-name-score">
+          <text>{{item.name}}</text>
+          <text>{{item.score}}分</text>
+        </view>
+        <view class="lease-garden-discribe">
+          <text>
+            {{item.discribe}}
+          </text>
+        </view>
+        <view class="lease-cost-star">
+          <text>{{item.cost}}/{{item.time}}</text>
+          <view catchtap="onCollectTap" data-id="{{item.id}}" data-category="lease">
+            <image src="/images/icon/collected.png" wx:if="{{item.collected}}"></image>
+          <image src="/images/icon/collect.png" wx:else></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

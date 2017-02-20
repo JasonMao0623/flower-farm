@@ -1,0 +1,29 @@
+<template name="helpTemplate">
+    <view class="help-container">
+  <view class="help">
+    <view class="help-left">
+      <image src="{{avator}}"></image>
+    </view>
+    <view class="help-right">
+      <view class="help-user-time-cost">
+        <text>{{user}}</text>
+        <text>{{time}}前</text>
+        <text>{{cost}}</text>
+      </view>
+      <view class="help-size-farm">
+        <text>{{area}}/{{size}}㎡</text>
+        <text>{{farm}}</text>
+      </view>
+      <view class="help-action-timeLimit">
+        <text>{{action}}</text>
+        <image src="/images/icon/clock.png"></image>
+        <text>{{limit}}小时内完成</text>
+      </view>
+      <view class="help-state">
+        <text>状态:</text>
+        <text>{{state}}({{paid}})</text>
+      </view>
+    </view>
+  </view>
+</view>
+</template>

@@ -1,0 +1,55 @@
+<import src="../level-template/level-template.wxml" />
+<template name="plantTemplate">
+    <view class="plant-container">
+  <view class="plant">
+    <view class="plant-avator-time">
+      <image src="{{avator}}" class="plant-left"></image>
+      <view class="plant-right">
+        <view class="plant-right-time">
+          <text>{{user}}</text>
+          <text>{{time}}</text>
+        </view>
+        <view class="plant-level">
+          <template is="levelTemplate" data="{{leveled}}"/>
+          <text>{{level}}级</text>
+        </view>
+      </view>
+    </view>
+    <view class="plant-title-exp">
+      <text>{{title}}</text>
+      <text>{{category}}</text>
+    </view>
+    <view class="plant-image">
+      <text>{{imageDis}}</text>
+      <view>
+        <block wx:for="{{images}}" >
+        <image src="{{item}}" catchtap="onImageTap" data-src="{{item}}"></image>
+        </block>
+      </view>
+    </view>
+    <view class="plant-bottom">
+      <view class="plant-comment-love">
+        <view class="plant-love">
+          <image src="/images/icon/collected.png"></image>
+          <text>{{love}}</text>
+        </view>
+        <view class="plant-comment">
+          <image src="/images/icon/comment.png"></image>
+          <text>{{comment}}</text>
+        </view>
+      </view>
+      <view class="plant-letcomment-letlove">
+        <view class="plant-love">
+          <image src="/images/icon/collect.png"></image>
+          <text>赞</text>
+        </view>
+        <view class="plant-comment">
+          <image src="/images/icon/comment.png"></image>
+          <text>评论</text>
+        </view>
+      </view>
+      <image src="/images/icon/commented.png" class="plant-let"></image>
+    </view>
+  </view>
+</view>
+</template>

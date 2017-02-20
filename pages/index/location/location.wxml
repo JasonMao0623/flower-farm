@@ -1,0 +1,35 @@
+<view class="location-container">
+  <view class="search">
+    <image src="/images/icon/search.png"></image>
+    <input placeholder="请输入城市名" bindconfirm="onInputChange"/>
+    <button catchtap="onCancleTap">取消</button>
+  </view>
+  <view class="city-container" wx:if="{{isSearching}}">
+      <view>
+        <text catchtap="onCityTap" data-city="{{searchCity}}">{{searchCity}}</text>
+      </view>
+  </view>
+  <view class="city-container" wx:if="{{notSearching}}">
+    <view class="height-light">定位城市</view>
+    <view class="location-city">
+      <text catchtap="onCityTap" data-city="{{locationCity}}">{{locationCity}}</text>
+    </view>
+    <view class="height-light">热门城市</view>
+    <view class="hot-city">
+      <text catchtap="onCityTap" data-city="如皋">如皋</text>
+      <text catchtap="onCityTap" data-city="上海">上海</text>
+      <text catchtap="onCityTap" data-city="广州">广州</text>
+      <text catchtap="onCityTap" data-city="深圳">深圳</text>
+      <text catchtap="onCityTap" data-city="北京">北京</text>
+      <text catchtap="onCityTap" data-city="南京">南京</text>
+    </view>
+    <view class="height-light whole-city">全国城市</view>
+    <scroll-view>
+      <block wx:for="{{wholeCities}}">
+        <view>
+          <text catchtap="onCityTap" data-city="{{item}}">{{item}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

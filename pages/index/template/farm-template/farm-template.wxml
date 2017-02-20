@@ -1,0 +1,38 @@
+<import src="../star-template/star-template.wxml" />
+<template name="farmTemplate">
+  <view class="farm-container">
+    <view class="farm">
+      <view class="farm-left">
+        <image src="{{img}}" class="farm-left-image"></image>
+        <template is="starTemplate" data="{{stared}}"/>
+      </view>
+      <view class="farm-right">
+        <view class="farm-discrib">
+          <view>
+            <text>{{name}}</text>
+          </view>
+          <view>
+            <text>{{location}}</text>
+          </view>
+          <view>
+            <text>{{action}}</text>
+          </view>
+        </view>
+        <view class="farm-love-read">
+          <view>
+            <image src="/images/icon/collect.png"></image>
+            <text>{{love}}</text>
+          </view>
+          <view>
+            <image src="/images/icon/read.png"></image>
+            <text>{{read}}</text>
+          </view>
+        </view>
+        <view class="farm-location">
+          <image src="/images/icon/location.png"></image>
+          <text>{{distance}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

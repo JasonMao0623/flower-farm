@@ -1,0 +1,110 @@
+<import src="template/active-template/active-template.wxml" />
+<import src="template/lease-template2/lease-template2.wxml" />
+<import src="template/plant-template/plant-template.wxml" />
+<import src="template/fans-template/fans-template.wxml" />
+<import src="template/help-template/help-template.wxml" />
+<import src="template/farm-template/farm-template.wxml" />
+<import src="template/ring-template/ring-template.wxml" />
+<view class="index-container">
+  <view class="location-scan">
+    <view catchtap="onCityTap">{{city}}
+      <image src="/images/icon/drop.png"></image>
+    </view>
+    <image class="scan" src="/images/scan.png" catchtap="onScanTap"></image>
+  </view>
+  <swiper class="nav" indicator-dots autoplay interval="3000" circular>
+    <block wx:for="{{navImgs}}" wx:key="item">
+      <swiper-item>
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="menu">
+    <view class="menu-line">
+      <view class="logo-discrible" catchtap="onMenuTap" data-menu="1">
+        <image src="/images/menu/daiti.png"></image>
+        <view>租地认养</view>
+        <view class="underline" wx:if="{{isShow.lease}}"></view>
+      </view>
+      <view class="logo-discrible" catchtap="onMenuTap" data-menu="3">
+        <image src="/images/menu/daiti.png"></image>
+        <view>种植讲堂</view>
+        <view class="underline" wx:if="{{isShow.plant}}"></view>
+      </view>
+      <view class="logo-discrible" catchtap="onMenuTap" data-menu="5">
+        <image src="/images/menu/daiti.png"></image>
+        <view>精彩分享</view>
+        <view class="underline" wx:if="{{isShow.share}}"></view>
+      </view>
+      <view class="logo-discrible" catchtap="onMenuTap" data-menu="7">
+        <image src="/images/menu/daiti.png"></image>
+        <view>美丽农场</view>
+        <view class="underline" wx:if="{{isShow.farm}}"></view>
+      </view>
+    </view>
+    <view class="menu-line">
+      <view class="logo-discrible" catchtap="onMenuTap" data-menu="2">
+        <image src="/images/menu/daiti.png"></image>
+        <view>近期活动</view>
+        <view class="underline" wx:if="{{isShow.active}}"></view>
+      </view>
+      <view class="logo-discrible" catchtap="onMenuTap" data-menu="4">
+        <image src="/images/menu/daiti.png"></image>
+        <view>花粉动态</view>
+        <view class="underline" wx:if="{{isShow.fans}}"></view>
+      </view>
+      <view class="logo-discrible" catchtap="onMenuTap" data-menu="6">
+        <image src="/images/menu/daiti.png"></image>
+        <view>互助托管</view>
+        <view class="underline" wx:if="{{isShow.help}}"></view>
+      </view>
+      <view class="logo-discrible" catchtap="onMenuTap" data-menu="8">
+        <image src="/images/menu/daiti.png"></image>
+        <view>菜园擂台</view>
+        <view class="underline" wx:if="{{isShow.ring}}"></view>
+      </view>
+    </view>
+  </view>
+  <scroll-view scroll-y>
+    <view wx:if="{{isShow.active}}">
+      <block wx:for="{{activeData}}" wx:key="item">
+        <template is="activeTemplate" data="{{item:item,collectedData:collectedData}}" />
+      </block>
+    </view>
+    <view wx:if="{{isShow.lease}}">
+      <block wx:for="{{leaseData}}" wx:key="item">
+        <template is="leaseTemplate2" data="{{item}}" />
+      </block>
+    </view>
+    <view wx:if="{{isShow.plant}}">
+      <block wx:for="{{plantData}}" wx:key="item">
+        <template is="plantTemplate" data="{{...item}}" />
+      </block>
+    </view>
+    <view wx:if="{{isShow.fans}}">
+      <block wx:for="{{fansData}}" wx:key="item">
+        <template is="fansTemplate" data="{{...item}}" />
+      </block>
+    </view>
+    <view wx:if="{{isShow.share}}">
+      <block wx:for="{{shareData}}" wx:key="item">
+        <template is="plantTemplate" data="{{...item}}" />
+      </block>
+    </view>
+    <view wx:if="{{isShow.help}}">
+      <block wx:for="{{helpData}}" wx:key="item">
+        <template is="helpTemplate" data="{{...item}}" />
+      </block>
+    </view>
+    <view wx:if="{{isShow.farm}}">
+      <block wx:for="{{farmData}}" wx:key="item">
+        <template is="farmTemplate" data="{{...item}}" />
+      </block>
+    </view>
+    <view wx:if="{{isShow.ring}}">
+      <block wx:for="{{ringData}}" wx:key="item">
+        <template is="ringTemplate" data="{{...item}}" />
+      </block>
+    </view>
+  </scroll-view>
+</view>

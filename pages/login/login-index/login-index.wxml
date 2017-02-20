@@ -1,0 +1,26 @@
+<view class="login-container">
+    <image src="/images/bg.jpg" class="bg"></image>
+    <view class="form-container">
+        <image src="/images/plant/avator.png" class="logo"></image>
+        <form>
+            <view class="line">
+                <image src="/images/icon/mobile.png"></image>
+                <input />
+            </view>
+             <view class="line">
+                <image src="/images/icon/password.png"></image>
+                <input type="password"/>
+                <text>忘记密码</text>
+            </view>
+            <view class="line button">
+                <button>登 录</button>
+                <button catchtap="onRegistTap">注 册</button>
+            </view>
+        </form>
+        <view class="text">
+            <text>-------- 第三方免注册登录 --------</text>
+        </view>
+        <image src="/images/icon/weichat.png" class="weichat" catchtap="onWeichatTap"></image>
+        <text class="weichat" >微信账号</text>
+    </view>
+</view>

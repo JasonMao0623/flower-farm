@@ -1,0 +1,4 @@
+<view catchtap="onLoginTap">
+    <image src="/images/icon/login.png"></image>
+    <text>点击头像登录</text>
+</view>

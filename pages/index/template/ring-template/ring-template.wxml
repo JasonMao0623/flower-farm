@@ -1,0 +1,36 @@
+<template name="ringTemplate">
+  <view class="ring-container">
+    <view class="ring">
+      <view class="ring-left">
+        <image src="{{img}}" class="ring-left-image"></image>
+        <view class="ring-left-bottom">
+          <image src="/images/icon/reward.png"></image>
+          <text>第{{rank}}名</text>
+        </view>
+      </view>
+      <view class="ring-right">
+        <view>
+          <text>{{user}}</text>
+        </view>
+        <view>
+          <text>{{gardenName}}</text>
+        </view>
+        <view>
+          <image src="/images/icon/zan.png"></image>
+          <text>{{zan}}</text>
+          <view>
+            <image src="{{farm.src}}"></image>
+            <text>{{farm.name}}</text>
+          </view>
+        </view>
+        <view>
+          <text>地块：{{gardenNum}}</text>
+        </view>
+        <view>
+          <image src="/images/icon/location.png"></image>
+          <text>{{distance}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

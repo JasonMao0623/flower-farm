@@ -1,0 +1,8 @@
+<template name="starTemplate">
+  <view class="star-container">
+    <block wx:for="{{stared}}" wx:key="item">
+      <image wx:if="{{item}}" src="/images/icon/star-full.png"></image>
+      <image wx:else src="/images/icon/star.png"></image>
+    </block>
+  </view>
+</template>

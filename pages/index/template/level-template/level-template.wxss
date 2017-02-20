@@ -1,0 +1,8 @@
+.level-container{
+    display:flex;
+    flex-direction:row;
+}
+.level-container image{
+    width: 30rpx;
+    height:30rpx;
+}

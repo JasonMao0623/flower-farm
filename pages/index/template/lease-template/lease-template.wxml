@@ -1,0 +1,22 @@
+<template name="leaseTemplate">
+  <view class="lease-container">
+    <view class="lease-garden">
+      <image src="{{item.img}}" class="lease-left"></image>
+      <view class="lease-right">
+        <view class="lease-name-score">
+          <text>{{item.name}}</text>
+          <text>{{item.score}}分</text>
+        </view>
+        <view class="lease-garden-discribe">
+          <text>
+            {{item.discribe}}
+          </text>
+        </view>
+        <view class="lease-cost-star">
+          <text>{{item.cost}}</text>
+          <image src="/images/icon/collect.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

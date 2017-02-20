@@ -1,0 +1,86 @@
+<import src="../../../index/template/level-template/level-template.wxml" />
+<view class="user-container">
+    <view class="user-banner">
+        <view class="set-warm">
+            <image src="/images/icon/set.png"></image>
+            <image src="/images/icon/warn.png"></image>
+        </view>
+        <image src="/images/banner.png" class="banner"></image>
+        <view class="shoping">
+            <view class="shop-clom">
+                <image src="/images/icon/shop.png"></image>
+                <text>购物车</text>
+            </view>
+            <view class="vertical"></view>
+            <view class="shop-clom">
+                <image src="/images/icon/coupon.png"></image>
+                <text>优惠券</text>
+            </view>
+            <view class="vertical"></view>
+            <view class="shop-clom">
+                <image src="/images/icon/collect.png"></image>
+                <text>收藏</text>
+            </view>
+        </view>
+        <view class="user">
+            <image src="{{user.userLogo}}" class="user-logo"></image>
+            <view class="user-right">
+                <text class="user-name">{{user.name}}</text>
+                <text>个性签名</text>
+                <view class="level">
+                    <template is="levelTemplate" data="{{leveled}}" />
+                    <text>1级 4分</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="space">
+        <text>你当前共有1块菜园</text>
+        <text>+创建菜园</text>
+    </view>
+    <view class="mine">
+        <view class="mine-line">
+            <image src="/images/userLogo.jpeg"></image>
+            <view>
+                <text>我的菜园</text>
+                <text>></text>
+            </view>
+        </view>
+        <view class="space mine-space"></view>
+        <view class="mine-line">
+            <image src="/images/icon/people.png"></image>
+            <view>
+                <text>我的分享</text>
+                <text>></text>
+            </view>
+        </view>
+        <view class="mine-line">
+            <image src="/images/icon/order.png"></image>
+            <view>
+                <text>我的订单</text>
+                <text>></text>
+            </view>
+        </view>
+        <view class="mine-line">
+            <image src="/images/icon/active.png"></image>
+            <view>
+                <text>我的活动</text>
+                <text>></text>
+            </view>
+        </view>
+        <view class="mine-line">
+            <image src="/images/icon/order-story.png"></image>
+            <view>
+                <text>互助接单历史</text>
+                <text>></text>
+            </view>
+        </view>
+         <view class="mine-line">
+            <image src="/images/icon/photo.png"></image>
+            <view>
+                <text>我的相册</text>
+                <text>></text>
+            </view>
+        </view>
+    </view>
+</view>

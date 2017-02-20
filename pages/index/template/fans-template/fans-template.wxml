@@ -1,0 +1,44 @@
+<import src="../level-template/level-template.wxml" />
+<template name="fansTemplate">
+  <view class="fans-container">
+    <view class="fans">
+      <view class="fans-top">
+        <image src="{{avator}}" class="fans-top-left"></image>
+        <view class="fans-top-right">
+          <view class="name">
+            <text>{{user}}</text>
+            <text>添加实景</text>
+          </view>
+          <view class="fans-level">
+            <template is="levelTemplate" data="{{leveled}}" />
+            <text>{{level}}级</text>
+          </view>
+        </view>
+      </view>
+      <view class="fans-bottom">
+        <view class="fans-image-container">
+          <block wx:for="{{images}}" wx:key="item" >
+          <image src="{{item}}" catchtap="onImageTap" data-src="{{item}}"></image>
+          </block>
+        </view>
+        <view class="fans-time-comment">
+          <text class="fans-time">{{time}}</text>
+          <view class="fans-comment-love-read">
+            <view class="fans-love">
+              <image src="/images/icon/collect.png"></image>
+              <text>{{love}}</text>
+            </view>
+            <view class="fans-comment">
+              <image src="/images/icon/comment.png"></image>
+              <text>{{comment}}</text>
+            </view>
+            <view class="fans-read">
+              <image src="/images/icon/read.png"></image>
+              <text>{{read}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

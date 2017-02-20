@@ -1,0 +1,122 @@
+@import "../level-template/level-template.wxss";
+.plant-container{
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    font-size:24rpx;
+    background:#EBEFF0;
+    color:#A0A0A0;
+}
+.plant{
+    width:95%;
+    margin:0 auto;
+    background:white;
+    margin-top:20rpx;
+    margin-bottom:20rpx;
+    position:relative;
+    border-radius:20rpx;
+    padding-bottom:20rpx;
+}
+.plant-avator-time{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+}
+.plant-left{
+    width:80rpx;
+    height:80rpx;
+    margin:20rpx 0 0 20rpx;
+    border-radius:10rpx;
+}
+.plant-right{
+    margin-top:20rpx;
+    margin-left:10rpx;
+}
+.plant-right-time text:last-child{
+    position: absolute;
+    right:30rpx;
+}
+.plant-level{
+    display: flex;
+    flex-direction:row;
+    height:30rpx;
+    line-height:30rpx;
+    margin-top:20rpx;
+}
+.plant-level text{
+    padding-top:5rpx;
+    margin-left:10rpx;
+}
+.plant-title-exp{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    font-size: 30rpx;
+    margin:20rpx 0 0 20rpx;
+}
+.plant-title-exp text:first-child{
+    color:black;
+    font-weight:500;
+}
+.plant-title-exp text:last-child{
+    position:absolute;
+    right:30rpx;
+}
+.plant-image{
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    margin:20rpx 0 0 20rpx;
+}
+.plant-image text{
+    width:95%;
+}
+.plant-image view{
+    margin-top:20rpx;
+}
+.plant-image image{
+    width:150rpx;
+    height:150rpx;
+    margin-left:16rpx;
+}
+.plant-bottom{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+}
+.plant-bottom image{
+    width:30rpx;
+    height: 30rpx;
+}
+.plant-bottom{
+    margin:20rpx 0 0 20rpx;
+    font-size:28rpx;
+    position: relative;
+}
+.plant-comment-love,.plant-letcomment-letlove{
+    display:flex;
+    flex-direction:row;
+}
+.plant-love{
+    height:30rpx;
+    line-height:30rpx;
+}
+.plant-comment-love text,.plant-letcomment-letlove text{
+    margin-left:5rpx;
+    margin-top: -5rpx;
+}
+.plant-comment,plant-love{
+    margin-left:10rpx;
+}
+.plant-letcomment-letlove{
+    padding:8rpx 2rpx;
+    border:1rpx solid;
+    position:absolute;
+    right:100rpx;
+    bottom:-10rpx;
+    border-radius:10rpx;
+}
+.plant-let{
+    position:absolute;
+    right:50rpx;
+}

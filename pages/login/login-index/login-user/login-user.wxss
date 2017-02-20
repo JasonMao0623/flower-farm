@@ -1,0 +1,142 @@
+/* pages/login/login-index/login-user/login-user.wxss */
+@import "../../../index/template/level-template/level-template.wxss";
+.user-container{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+}
+.user-banner{
+    width: 100%;
+    position: relative;
+    padding-bottom:20rpx;
+}
+.set-warm{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top:0rpx;
+    width: 100%;
+    background: black;
+    opacity: 0.4;
+    padding-bottom:10rpx;
+}
+.set-warm image{
+    margin-top:10rpx;
+    width:60rpx;
+    height: 60rpx;
+}
+.set-warm image:first-child{
+    margin-left:20rpx;
+}
+.set-warm image:last-child{
+    position: absolute;
+    right: 20rpx;
+}
+.banner{
+    width: 100%;
+    height: 320rpx;
+}
+.shoping{
+    display: flex;
+    flex-direction: row;
+    margin-top:50rpx;
+}
+.shop-clom{
+    display: flex;
+    flex-direction: column;
+    font-size:24rpx;
+    text-align: center;
+}
+.shop-clom image{
+    width:60rpx;
+    height: 60rpx;
+    margin-left:90rpx;
+    margin-top:10rpx;
+}
+.shop-clom text{
+    margin-left:90rpx;
+}
+.vertical{
+    width: 0;
+    height: 60rpx;
+    border: 0.1rpx solid black;
+    margin-left: 80rpx;
+    margin-top:20rpx;
+}
+.user-logo{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 150rpx;
+    margin-top:10rpx;
+}
+.user{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 200rpx;
+    left: 20rpx;
+}
+.user-right{
+    margin-left: 20rpx;
+    margin-top:10rpx;
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+.level{
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+.user-right text,.user-right image{
+    margin-top: 18rpx;
+    font-size:30rpx;
+}
+.space{
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    position: relative;
+    font-size:30rpx;
+    background:#EBEFF0;
+    border-bottom:#a0a0a0 solid 0.1rpx;
+}
+.space text:first-child{
+    margin-left:30rpx;
+}
+.space text:last-child{
+    position: absolute;
+    right: 30rpx;
+    color: #66E56E;
+    font-size:36rpx;
+}
+.mine-line{
+    display: flex;
+    flex-direction: row;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-bottom:#a0a0a0 solid 0.1rpx;
+    font-size:30rpx;
+    position: relative;
+    }
+.mine-line image{
+    width: 50rpx;
+    height: 50rpx;
+    margin-left:25rpx;
+    margin-top:25rpx;
+}
+.mine-line view{
+    display: flex;
+    flex-direction: column;
+}
+.mine-line view text{
+    margin-left:20rpx;
+}
+.mine-line view text:last-child{
+    position: absolute;
+    right: 30rpx;
+}
+.mine-space{
+    height: 30rpx;
+}
+

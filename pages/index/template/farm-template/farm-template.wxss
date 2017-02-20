@@ -1,0 +1,85 @@
+@import "../star-template/star-template.wxss";
+.farm-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+  color: #a0a0a0;
+  background: #ebeff0;
+}
+
+.farm {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 5rpx;
+  position: relative;
+  background: white;
+  padding-bottom: 30rpx;
+}
+
+.farm-left, .farm-right {
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+}
+
+.farm-left-image {
+  width: 150rpx;
+  height: 150rpx;
+  border: 0.1rpx solid #a0a0a0;
+}
+
+.farm-discrib {
+  display: flex;
+  flex-direction: column;
+}
+
+.farm-discrib view {
+  margin-top: 20rpx;
+}
+
+.farm-discrib view:first-child {
+  margin-top: 0;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: black;
+}
+
+.farm-love-read {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 30rpx;
+  bottom: 30rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+}
+
+.farm-love-read text, .farm-love-read view {
+  margin-left: 10rpx;
+}
+
+.farm-love-read image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.farm-location image {
+  width: 40rpx;
+  height: 50rpx;
+  margin: 0 auto;
+}
+
+.farm-location text {
+  margin-top: 10rpx;
+}
+
+.farm-location {
+  position: absolute;
+  right: 40rpx;
+  top: 15rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #e29265;
+}

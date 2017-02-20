@@ -1,0 +1,63 @@
+/* pages/location/location.wxss */
+.location-container{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    font-size:36rpx;
+}
+.search{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    height:100rpx;
+    border-bottom:solid 1px #DDDDDD;
+    background:#F5F5F5;
+    position: relative;
+}
+.search input{
+    width:65%;
+    height:70rpx;
+    margin:15rpx 0 0 75rpx;
+    line-height:70rpx;
+}
+.search button{
+    width:150rpx;
+    height:70rpx;
+    margin:15rpx 0 0 30rpx;
+    line-height:70rpx;
+}
+.search image{
+    width:40rpx;
+    height:40rpx;
+    position: absolute;
+    top:28rpx;
+    left:10rpx;
+}
+.city-container{
+    width: 100%;
+}
+.city-container view{
+    width: 100%;
+    height: 100rpx;
+    border-bottom:solid 1px #DDDDDD; 
+    line-height: 100rpx;
+}
+.height-light{
+    background:#F5F5F5;
+    padding-left:30rpx;
+    font-weight:600;
+}
+view text:first-child{
+    font-size:32rpx;
+    margin-left:30rpx;
+    border-radius:5rpx;
+    padding:15rpx 15rpx;
+}
+.location-city text,.hot-city text{
+    border:solid 1px #EF473A;
+    color: #EF473A;  
+    font-size:32rpx;
+    margin-left:20rpx;
+    border-radius:5rpx;
+    padding:15rpx 15rpx;
+}

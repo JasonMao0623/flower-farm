@@ -1,0 +1,95 @@
+
+.ring-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+  color: #a0a0a0;
+  background: #ebeff0;
+}
+
+.ring {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 5rpx;
+  position: relative;
+  background: white;
+  padding-bottom: 30rpx;
+}
+.ring-left{
+  display: flex;
+  flex-direction:column;
+}
+.ring-left-bottom{
+  display:flex;
+  flex-direction: row;
+  height:30rpx;
+  margin-top:10rpx;
+}
+.ring-left-bottom text{
+  margin-top:6rpx;
+  margin-left:10rpx;
+  color:black;
+}
+.ring-left-bottom image{
+  width:30rpx;
+  height:30rpx;
+}
+.ring-left-image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius:20rpx;
+}
+.ring-left, .ring-right {
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+}
+.ring-right{
+  color:black;
+  font-size:30rpx;
+  font-weight:600;
+}
+.ring-right image{
+  width: 30rpx;
+  height:30rpx;
+}
+.ring-right view:nth-child(2){
+  margin-top:10rpx;
+}
+.ring-right view:nth-child(3){
+  margin-top:10rpx;
+  display: flex;
+  flex-direction:row;
+}
+.ring-right view:nth-child(3) text{
+  margin-left: 10rpx;
+}
+.ring-right view:nth-child(3) view{
+  position:absolute;
+  right:30rpx;
+  top:100rpx;
+}
+.ring-right view:nth-child(4){
+  position: absolute;
+  right:30rpx;
+  bottom:30rpx;
+  font-size:24rpx;
+}
+.ring-right view:nth-child(5){
+  position: absolute;
+  right:30rpx;
+  top:10rpx;
+  display: flex;
+  flex-direction:column;
+  font-size:24rpx;
+}
+.ring-right view:nth-child(5) image{
+  width: 30rpx;
+  height: 40rpx;
+  margin:0 auto;
+}
+.ring-right view:nth-child(5) text{
+  margin-top:10rpx;
+}
+

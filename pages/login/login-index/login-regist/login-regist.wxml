@@ -1,0 +1,28 @@
+<!--pages/login/login-index/login-regist/login-regist.wxml-->
+<view class="login-container">
+    <image src="/images/bg.jpg" class="bg"></image>
+    <view class="form-container">
+        <image src="/images/plant/avator.png" class="logo"></image>
+        <form>
+            <view class="line">
+                <image src="/images/icon/mobile.png"></image>
+                <input placeholder="手机号码"/>
+            </view>
+             <view class="line">
+                <image src="/images/icon/verification.png"></image>
+                <input plplaceholder="手机验证码"/>
+                <text catchtap="onVerTap">获取验证码</text>
+            </view>
+            <view class="line">
+                <image src="/images/icon/password.png"></image>
+                <input type="password" placeholder="至少输入6位数字/字母"/>
+            </view>
+            <view class="line button">
+                <button>注 册</button>
+            </view>
+        </form>
+        <view class="text">
+            <text>注册即视为同意 用户隐私条款</text>
+        </view>
+    </view>
+</view>

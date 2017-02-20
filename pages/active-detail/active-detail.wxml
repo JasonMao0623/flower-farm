@@ -1,0 +1,80 @@
+<import src="../index/template/star-template/star-template.wxml" />
+<view class="active-container">
+  <view class="active-banner">
+    <image src="{{activeData.banner}}" class="banner"></image>
+    <view class="banner-text">
+      <view class="banner-text-line1">
+        <text>{{activeData.sloganTitle}}</text>
+      </view>
+      <view class="banner-text-all">
+        <template is="starTemplate" data="{{stared}}" />
+        <image src="/images/icon/fuwu.png"></image>
+        <text>已报名 {{activeData.signUp}} 还剩 {{activeData.remain}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="time-location-stand-cost">
+    <view class="time line">
+      <image src="/images/icon/clock.png"></image>
+      <text>{{activeData.date}}</text>
+    </view>
+    <view class="location line">
+      <image src="/images/icon/location.png"></image>
+      <text>{{activeData.locationDetail}}</text>
+      <text>></text>
+    </view>
+    <view class="people line">
+      <image src="/images/icon/people.png"></image>
+      <text>成人 {{activeData.peopleNum.adult}}, 儿童 {{activeData.peopleNum.child}}</text>
+      <view  catchtap="onChangeTap">
+        <text>修改</text>
+        <image src="/images/icon/edit.png"></image>
+      </view>
+    </view>
+    <view class="cost line">
+      <image src="/images/icon/shop.png"></image>
+      <text>{{activeData.cost}}(非集体活动，请自选时间)</text>
+    </view>
+  </view>
+  <view class="information">
+    <view class="line infor">
+      <text>商户信息</text>
+    </view>
+    <view class="line infor-detail">
+      <image src="{{activeData.farm.image}}"></image>
+      <view>
+        <text>{{activeData.farm.name}}</text>
+        <text>{{activeData.farm.service}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{changePeopleNum}}">
+  <view class="mirror"></view>
+  <view class="people-select">
+    <view class="select-container">
+      <view class="title">
+        <text>选择人数</text>
+      </view>
+      <view class="action">
+        <view class="action-line">
+          <text>成人</text>
+          <view catchtap="onAdultLeaseTap">-</view>
+          <view>{{activeData.peopleNum.adult}}</view>
+          <view catchtap="onAdultAddTap">+</view>
+          <text>每加1人 ¥{{activeData.eachCost}}</text>
+        </view>
+        <view class="action-line">
+          <text>儿童</text>
+          <view catchtap="onChildLeaseTap">-</view>
+          <view>{{activeData.peopleNum.child}}</view>
+          <view catchtap="onChildAddTap">+</view>
+          <text>每加1人 ¥{{activeData.eachCost}}</text>
+        </view>
+      </view>
+      <view class="xX" catchtap="onxXTap">
+        <view>关闭</view>
+      </view>
+    </view>
+  </view>
+</view>

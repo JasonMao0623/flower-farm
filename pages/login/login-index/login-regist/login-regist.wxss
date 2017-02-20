@@ -1,0 +1,94 @@
+/* pages/login/login-index/login-regist/login-regist.wxss */
+/* pages/login/login-index/login-index.wxss */
+
+.login-container {
+  width: 100%;
+}
+
+.bg {
+  width: 750rpx;
+  height: 1254rpx;
+  -webkit-filter: blur(10px);
+}
+
+.form-container {
+  width: 100%;
+  position: absolute;
+  top: 0rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-top: 150rpx;
+}
+
+.line {
+  width: 80%;
+  margin: 0 auto;
+  height: 100rpx;
+  background: white;
+  opacity: 0.3;
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10rpx;
+}
+
+.line:first-child {
+  margin-top: 30rpx;
+}
+
+.line image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 25rpx;
+}
+
+.line input {
+  margin-top: 25rpx;
+}
+.line input{
+    margin-left:20rpx;
+}
+.line text{
+    font-size:28rpx;
+    margin-top:30rpx;
+}
+.button{
+    opacity: 1;
+    background: none;
+    margin-top:30rpx;
+    height:100rpx;
+    line-height:100rpx;
+}
+.button button{
+    width: 540rpx;
+    opacity: 0.8
+}
+.button button:first-child{
+    background: #66E56E;
+    color: white;
+}
+.text{
+    width: 100%;
+    margin-top:30rpx;
+    text-align: center;
+    font-size:30rpx;
+}
+.weichat{
+    width: 150rpx;
+    height: 150rpx;
+    margin:0 auto;
+    margin-top:30rpx;
+    font-size:30rpx;
+    text-align: center;
+}
+input{
+    width: 374rpx;
+    font-size:28rpx;
+}

@@ -1,0 +1,189 @@
+@import "../index/template/star-template/star-template.wxss";
+
+.lease-detail-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 30rpx;
+  color: #a0a0a0;
+  background: #ebeff0;
+}
+.lease-detail-top{
+    background: white;
+}
+.top-text {
+  width: 100%;
+  text-align: center;
+}
+
+.lease-img {
+  width: 100%;
+  height: 320rpx;
+  margin-bottom: 30rpx;
+}
+
+.lease-name {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: black;
+}
+
+.size-star-sale {
+  width: 47%;
+  display: flex;
+  flex-direction: row;
+  line-height: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+
+.lease-sale {
+  margin-left: 20rpx;
+}
+
+.size-star-sale image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.cost {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  line-height: 36rpx;
+  height: 36rpx;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  text-align: center;
+}
+
+.cost text {
+  color: red;
+  font-weight: 600;
+  font-size: 36rpx;
+}
+
+.cost view {
+  position: relative;
+  margin-left: 20rpx;
+}
+
+.cost view .under-line {
+  width: 100%;
+  position: absolute;
+  top: 15rpx;
+  left: -15rpx;
+  border: 0.1rpx solid red;
+}
+.lease-line{
+    margin-top:30rpx;
+    background:white;
+}
+.lease-line-line{
+    border-bottom:solid 0.1rpx #a0a0a0;
+}
+.order-line1,.order-action,.order-line2,.order-line3,.farm-line1,.farm-line2,.goods-line1{
+    display:flex;
+    flex-direction:row;
+    height:100rpx;
+    line-height:100rpx;
+    color:black;
+    font-size:30rpx;
+    font-weight: 600;
+}
+.order-line1{
+    position:relative;
+}
+.order-line1 text,.order-line2 text,.order-line3 text,.farm-text,.farm-line2 image,.goods-line1-text{
+    margin-left:30rpx;
+}
+.order-action{
+    position: absolute;
+    right:30rpx;
+    top:20rpx;
+}
+.order-action view{
+    width:60rpx;
+    height:60rpx;
+    border:0.1rpx solid;
+    line-height:60rpx;
+    text-align: center;
+    font-size:40rpx;
+    margin-left:10rpx;
+    background: #a0a0a0;
+}
+.order-action view:nth-child(2){
+    width:40rpx;
+    background: none;
+}
+.order-line2{
+    position: relative;
+}
+.order-line2 text:last-child{
+    position: absolute;
+    color:#a0a0a0;
+    right:30rpx;
+}
+.order-line3 text{
+    height:60rpx;
+    border:0.1rpx solid red;
+    color: red;
+    line-height:60rpx;
+    margin-top:20rpx;
+    padding: 0 10rpx;
+}
+.farm-line1{
+    position: relative;
+}
+.farm-line1 view image{
+    width: 30rpx;
+    height: 30rpx;
+}
+.farm-line1 view{
+    position: absolute;
+    right:30rpx;
+    color:#a0a0a0;
+}
+.farm-line2{
+    height:140rpx;
+    line-height:140rpx;
+}
+.farm-line2 image {
+    width: 100rpx;
+    height: 100rpx;
+    margin-top:20rpx;
+}
+.farm-line2 view{
+    display: flex;
+    flex-direction:column;
+    height:100rpx;
+    line-height:100rpx;
+    color:#a0a0a0;
+    margin-left:20rpx;
+}
+.farm-line2 view text{
+    height:30rpx;
+    margin-top:5rpx;
+}
+.goods-detail image{
+    width: 30rpx;
+    height: 30rpx;
+    position: relative;
+}
+.goods-line1-logo{
+    position:absolute;
+    right: 30rpx;
+    display: flex;
+    flex-direction:row;
+    color:#a0a0a0;
+}
+.goods-line1-logo view{
+    margin-left:10rpx;
+}
+.goods-line1-logo text{
+    margin-left:5rpx;
+}
+    

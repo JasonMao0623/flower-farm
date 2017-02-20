@@ -1,0 +1,24 @@
+<template name="activeTemplate">
+  <view class="active-container" catchtap="onMenuChildTap" data-id="{{item.id}}" data-category="active">
+    <image src="{{item.banner}}" class="active-banner"></image>
+    <view class="active-slogan">
+      <text>{{item.sloganTitle}}</text>
+      <text>{{item.slogan}}</text>
+    </view>
+    <view class="active-time-location">
+      <text class="active-time">{{item.date}}</text>
+      <view class="active-location">
+        <text>{{item.location}}</text>
+        <image src="/images/icon/location.png"></image>
+        <text class="active-distance">{{item.distance}}</text>
+      </view>
+    </view>
+    <view class="active-cost-collect">
+      <text>¥{{item.cost}}/家庭</text>
+      <view catchtap="onCollectTap" data-id="{{item.id}}" data-category="active">
+        <image src="/images/icon/collected.png" wx:if="{{item.collected}}"></image>
+        <image src="/images/icon/collect.png" wx:else></image>
+      </view>
+    </view>
+  </view>
+</template>
